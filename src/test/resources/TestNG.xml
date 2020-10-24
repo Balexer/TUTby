@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tutByCinema">
+    <test name="scenarios">
+        <classes>
+            <class name="tests.UItests">
+                <methods>
+                    <include name="testInTheFilmsTab">
+                        <parameter name="genre" value="Боевик"/>
+                    </include>
+                    <include name="testInTheSerialsTab">
+                        <parameter name="type" value="Сериалы"/>
+                        <parameter name="genre" value="Комедия"/>
+                    </include>
+                    <include name="testInAnimationTab">
+                        <parameter name="type" value="Мультфильмы"/>
+                        <parameter name="genre" value="Драма"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
